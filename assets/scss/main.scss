@@ -1,0 +1,16 @@
+@use './base/reset';
+@use './base/fonts';
+
+html, body {
+  font-family: "TTCommon", sans-serif;
+  background-color: $white;
+  color: $black;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+body {
+  &, > :first-child {
+    height: 100%;
+  }
+}
