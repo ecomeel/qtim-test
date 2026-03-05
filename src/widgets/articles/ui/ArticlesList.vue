@@ -11,8 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import ArticleCard from '~/src/entities/article/ui/ArticleCard.vue';
-import type { Article } from '~/src/entities/article/model/types';
+import { ArticleCard, type Article } from '~/src/entities/article';
 
 defineProps<{ articles: Article[] }>()
 

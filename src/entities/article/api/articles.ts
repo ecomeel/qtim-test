@@ -1,5 +1,5 @@
-import type { Article } from "~/src/entities/article/model/types";
-import { api } from "../lib/api";
+import { type Article } from "../model/types";
+import { api } from "~/src/shared/lib/api";
 
 export const getArticles = (): Promise<Article[]> => api("/posts")
 

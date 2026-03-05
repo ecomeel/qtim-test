@@ -1,4 +1,4 @@
-import { useArticleStore } from "~/src/entities/article/model/store"
+import { useArticleStore } from "~/src/entities/article";
 
 const PAGE_SIZE = 8
 

@@ -13,7 +13,6 @@
 <script setup lang="ts">
 import { type Article } from '../model/types';
 
-
 defineProps<Pick<Article, "id" | "title" | "image">>();
 </script>
 

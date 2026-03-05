@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import { useArticleStore } from '~/src/entities/article/model/store';
+import { useArticleStore } from '~/src/entities/article';
 
 const route = useRoute();
 const articleStore = useArticleStore();

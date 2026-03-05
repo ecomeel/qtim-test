@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { getArticles, getArticleById } from '~/src/shared/api/articles'
+import { getArticles, getArticleById } from '../api/articles'
 import type { Article } from './types'
 import { useLoading } from '~/src/shared/lib/useLoading';
 
