@@ -21,11 +21,16 @@ export const useArticleStore = defineStore('article', () => {
     })
   }
 
+  const updateArticlesList = (data: Article[]) => {
+    articles.value = data
+  }
+
   return {
     articles,
     currentArticle,
     fetchArticles,
     fetchArticleById,
+    updateArticlesList,
     isLoading,
   }
 })

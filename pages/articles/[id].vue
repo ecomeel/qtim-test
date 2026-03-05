@@ -14,17 +14,19 @@
 </template>
 
 <script setup lang="ts">
-import { useArticleStore } from '~/src/entities/article';
+import { useArticleStore } from '~/src/entities/article'
 
-const route = useRoute();
-const articleStore = useArticleStore();
+const route = useRoute()
+const articleStore = useArticleStore()
 
-const articleIdFromQuery = route.params.id as string;
+const articleId = route.params.id as string
 
-await articleStore.fetchArticleById(articleIdFromQuery);
+await useAsyncData(
+  `article-${articleId}`,
+  () => articleStore.fetchArticleById(articleId)
+)
 
-const article = computed(() => articleStore.currentArticle);
-
+const article = computed(() => articleStore.currentArticle)
 </script>
 
 <style lang="scss" scoped>
